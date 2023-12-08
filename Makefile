@@ -1,5 +1,6 @@
 SOURCE=$(wildcard *.c)
 all:
+	@make clean
 	@echo "> Compiling mini-redis ($(words $(SOURCE)) files)"
 	@gcc -Wall $(SOURCE) -o mini-redis
 
